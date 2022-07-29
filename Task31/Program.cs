@@ -18,7 +18,12 @@ string userEnter = Console.ReadLine();
 check = int.TryParse(userEnter, out size);
 
 if (check)
-{
+{   
+    if (size < 9999 || size > 99999)
+    {
+        Console.WriteLine("Вы ввели неправльное число!");
+        return;
+    }    
     for (int i = 0; i < 2; i++)
         if (userEnter[i] != userEnter[4-i])
         {
