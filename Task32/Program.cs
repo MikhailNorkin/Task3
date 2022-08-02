@@ -28,13 +28,13 @@ y3 = int.Parse(Console.ReadLine());
 int[] arrayX = new int[3];
 int[] arrayY = new int[3];
 
-int[] array
+int[] Vvod(int[] array) 
 {
     for(int i = 0; i < 3; i++)
     {
         array[i] = int.Parse(Console.ReadLine());
     }
-    return;
+    return array;
 }
 
 
@@ -43,5 +43,8 @@ Console.WriteLine($"Введите координаты первой точки:
 Vvod(arrayX);
 Console.WriteLine($"Введите координаты второй точки:");
 Vvod(arrayY);
-Console.WriteLine($"{arrayX[1]-arrayY[1]}");
-/*Console.WriteLine(MathF.Sqrt((y1-x1)*(y1-x1)+(y2-x2)*(y2-x2)+(y3-x3)*(y3-x3)));*/
+double rez = 0;
+rez = MathF.Sqrt((arrayY[0]-arrayX[0])*(arrayY[0]-arrayX[0])+
+                +(arrayY[1]-arrayX[1])*(arrayY[1]-arrayX[1])
+                +(arrayY[2]-arrayX[2])*(arrayY[2]-arrayX[2]));
+Console.WriteLine($"Расстояние между точками равно {rez}");
