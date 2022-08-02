@@ -5,24 +5,6 @@ A (3,6,8); B (2,1,-7), -> 15.84
 
 A (7,-5, 0); B (1,-1,9) -> 11.53
 
-
-int x1 = 0, x2 =0, x3 =0 , y1 =0, y2 = 0, y3 = 0;
-
-Console.WriteLine($"Введите координаты первой точки:"!);
-Console.Write($"X1 = "!);
-x1 = int.Parse(Console.ReadLine());
-Console.Write($"Y1 = "!);
-y1 = int.Parse(Console.ReadLine());
-Console.WriteLine($"Введите координаты второй точки:"!);
-Console.Write($"X2 = "!);
-x2 = int.Parse(Console.ReadLine());
-Console.Write($"Y2 = "!);
-y2 = int.Parse(Console.ReadLine());
-Console.WriteLine($"Введите координаты третьей точки:"!);
-Console.Write($"X3 = "!);
-x3 = int.Parse(Console.ReadLine());
-Console.Write($"Y3 = "!);
-y3 = int.Parse(Console.ReadLine());
 */
 
 int[] arrayX = new int[3];
