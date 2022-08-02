@@ -12,7 +12,7 @@ bool check = false;
 int size = 0;
 int k = 0;
 
-Console.Write("Введите пятизначное число:");
+Console.Write("Введите пятизначное число: ");
 string userEnter = Console.ReadLine();
 
 check = int.TryParse(userEnter, out size);
