@@ -37,8 +37,6 @@ int[] Vvod(int[] array)
     return array;
 }
 
-
-
 Console.WriteLine($"Введите координаты первой точки:");
 Vvod(arrayX);
 Console.WriteLine($"Введите координаты второй точки:");
